@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_DIRS =['C:/Users/Ekko/Documents/Prueba/AsisScan/AsisScan/web/static']
+STATICFILES_DIRS =['C:/Users/Ekko/Documents/IA_AsisScan/AsisScan/AsisScan/web/static']
 
 # Application definition
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'AsisScan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Ekko/Documents/Prueba/AsisScan/AsisScan/web'],
+        'DIRS': ['C:/Users/Ekko/Documents/IA_AsisScan/AsisScan/AsisScan/web'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

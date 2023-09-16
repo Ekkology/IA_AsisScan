@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from AsisScan.view import index
+from AsisScan.view import login
+from AsisScan.view import control
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index)
+    path('index/', index),
+    path('login/', login),
+    path('control/',control)
 ]

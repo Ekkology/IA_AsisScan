@@ -295,6 +295,8 @@ button {
 
 .logo {
      padding-top: 12px;
+     width: 200px;
+     height: 200px;
 }
 
 ul.conat_info li {
@@ -331,8 +333,9 @@ ul.conat_info li a:hover {
 
 .banner_main {
      background: url(../images/banner.png);
+    /** max-width: 1200px; **/
      padding: 300px 0px 0px 0px;
-     background-size: auto 78%;
+     background-size: auto 86%;
      background-repeat: no-repeat;
      min-height: 1150px;
      background-position: right top;
@@ -348,18 +351,25 @@ ul.conat_info li a:hover {
 
 .text-bg h1 {
      color: #f8a60f;
-     font-size: 60px;
+     font-size: 40px;
      line-height: 70px;
      padding-bottom: 45px;
      font-weight: bold;
 }
+.text-bg h3{
+     margin-top: 30px;
+     color: #222222;
+     font-weight: 1000px;
+     font-size: 17px;
+     display: block;
+}
 
 .text-bg span {
      color: #222222;
-     font-weight: 500;
+     font-weight: 700;
      font-size: 17px;
      line-height: 30px;
-     margin-bottom: 30px;
+     margin-bottom: 200px;
      display: block;
 }
 
@@ -377,6 +387,10 @@ ul.conat_info li a:hover {
 
 .transfot {
      text-align: left;
+}
+.transfot_x {
+     text-align: left;
+     margin-bottom: 15px;
 }
 
 .transfot span {
@@ -398,8 +412,23 @@ ul.conat_info li a:hover {
      margin-bottom: 15px;
      border: #fff solid 1px;
      font-size: 16px;
+     border-radius: 10px;
+}
+.transfot_form_ct {
+     padding: 0 15px;
+     height: 40px;
+     margin-bottom: 15px;
+     border: #fff solid 1px;
+     font-size: 16px;
+     border-radius: 10px;
 }
 
+
+.logo-icon {
+     width: 25px;
+     height: auto;
+     margin-right: 10px;
+}
 .get_now {
      max-width: 150px;
      width: 100%;
@@ -407,8 +436,40 @@ ul.conat_info li a:hover {
      background: #222b3c;
      color: #fff;
      font-size: 17px;
+     border-radius: 10px;
 }
 
+.Google {
+     max-width: 300px;
+     width: 100%;
+     padding: 6px 0;
+     background: #222b3c;
+     margin-bottom: 15px;
+     margin-top: 15px;
+     color: #fff;
+     font-size: 17px;
+     border-radius: 10px;
+}
+.Microsoft {
+     max-width: 300px;
+     width: 100%;
+     padding: 6px 0;
+     background: #222b3c;
+     margin-bottom: 15px;
+     color: #fff;
+     font-size: 17px;
+     border-radius: 10px;
+}
+.Facebook {
+     max-width: 300px;
+     width: 100%;
+     padding: 6px 0;
+     background: #222b3c;
+     margin-bottom: 15px;
+     color: #fff;
+     font-size: 17px;
+     border-radius: 10px;
+}
 .get_now:hover {
      background-color: #000;
 }
@@ -486,6 +547,11 @@ ul.conat_info li a:hover {
      line-height: 1px;
 }
 
+
+.afiliados{
+     margin-top: 40px;
+     max-width: 200px;
+}
 .read_more::before {
      position: absolute;
      content: "";
