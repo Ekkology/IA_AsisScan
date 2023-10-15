@@ -16,12 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AsisScan.view import index
+from register.views import index
 from AsisScan.view import login
 from AsisScan.view import control
+from AsisScan.view import configuraciones
+from AsisScan.view import video_imagen
+from AsisScan.view import home
+from register.views import salir_p
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index),
+    path('index/', index,),
+    path('', home, name='home'), 
     path('login/', login),
-    path('control/',control)
+    path('control/',control, name='control'),
+    path('configuraciones/',configuraciones),
+    path('video_imagen/',video_imagen),
+    path('salir_p/',salir_p,name='salir_p')
 ]

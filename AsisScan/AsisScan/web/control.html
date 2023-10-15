@@ -43,7 +43,9 @@
          <a href="#about">About</a>
          <a href="#service">Services  </a>
          <a href="#vehicles">Our Vehicles</a>
-         <a href="#testimonial">Testimonial</a>
+         {% if user.is_authenticated %}
+         <a href="{% url 'salir_p' %}">Salir de la cuenta</a>
+         {% endif %}
          <a href="#contact">Contact</a>
       </div>
       <!-- header -->
@@ -54,7 +56,7 @@
                <div class="row">
                   <div class="col-md-4 col-sm-4">
                      <div class="logo">
-                        <a href="index.html"><img src="{% static '/images/logo.png'%}" alt="#" /></a>
+                        <a href="{% url 'home' %}"><img src="{% static '/images/logo.png'%}" alt="#" /></a>
                      </div>
                   </div>
                   <div class="col-md-8 col-sm-8">
@@ -72,9 +74,39 @@
       </header>
       <!-- end header inner -->
       <!-- end header -->
-    
-    
- 
+      <body>
+         <div class="cuadrado">
+            <h3></h3>
+         </div>
+         <div class="cuadrado2">
+             <div class="logo-container">
+                 <a href="http://127.0.0.1:8000/video_imagen/"><img src="{% static 'images/logo_display.png' %}" alt="Imagen 1"></a>
+                 <p>Display</p>
+             </div>
+             <div class="logo-container">
+                 <a href="enlace2.html"><img src="{% static 'images/logo_backup.png' %}" alt="Imagen 2"></a>
+                 <p>BackUps</p>
+             </div>
+             <div class="logo-container">
+                 <a href="enlace3.html"><img src="{% static 'images/logo_asistencia.png' %}" alt="Imagen 3"></a>
+                 <p>Control de Asistencia</p>
+             </div>
+             <div class="logo-container">
+                 <a href="enlace4.html"><img src="{% static 'images/mas_logo.png' %}" alt="Imagen 4"></a>
+                 <p>Más</p>
+             </div>
+             <div class="logo-container">
+                 <a href="enlace5.html"><img src="{% static 'images/logo_soporte.png' %}" alt="Imagen 5"></a>
+                 <p>Soporte</p>
+             </div>
+         </div>
+
+      <div class = "banner_de_camaras">
+         <h2>Sección de Cámaras</h2>
+      </div>
+
+
+     </body>
       <!-- Javascript files-->
       <script src="{% static 'js/jquery.min.js' %}"></script>
       <script src="{% static 'js/popper.min.js' %}"></script>

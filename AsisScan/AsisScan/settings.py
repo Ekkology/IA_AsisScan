@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import  os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -35,9 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'AsisScan',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'register'
 ]
 
 MIDDLEWARE = [
@@ -76,10 +79,16 @@ WSGI_APPLICATION = 'AsisScan.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',  # O el motor de base de datos que estés utilizando
+        'NAME': 'pruebaimagen',
+        'USER': 'ia_team',
+        'PASSWORD': 'prueba_ia2',
+        'HOST': 'localhost',
+        'PORT': '3306',
+       
     }
 }
+
 
 
 # Password validation
