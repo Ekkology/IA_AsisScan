@@ -18,11 +18,21 @@ from django.contrib import admin
 from django.urls import path
 from register.views import index
 from AsisScan.view import login
-from AsisScan.view import control
+from esp_task.views import control
 from AsisScan.view import configuraciones
-from AsisScan.view import video_imagen
 from AsisScan.view import home
 from register.views import salir_p
+from esp_task.views import video_imagen1
+from esp_task.views import video_imagen2
+from esp_task.views import obtener_imagen
+from esp_task.views import obtener_imagen2
+from esp_task.views import actualizar_movimiento
+from Datos_Control_Asistencia.views import control_asistencia
+from backups.views import Backups
+
+from django.conf.urls.static import static
+from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', index,),
@@ -30,6 +40,17 @@ urlpatterns = [
     path('login/', login),
     path('control/',control, name='control'),
     path('configuraciones/',configuraciones),
-    path('video_imagen/',video_imagen),
-    path('salir_p/',salir_p,name='salir_p')
+    path('video_imagen1/',video_imagen1,name='video_imagen'),
+    path('salir_p/',salir_p,name='salir_p'),
+    path('video_imagen2/',video_imagen2,name='video_imagen2'),
+    path('obtener_imagen/',obtener_imagen),
+    path('obtener_imagen2/',obtener_imagen2),
+    path('backups/',Backups),
+    path('actualizar_movimiento/<str:direccion>/', actualizar_movimiento, name='actualizar_movimiento'),
+    path('control_asistencia/',control_asistencia)
 ]
+   
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

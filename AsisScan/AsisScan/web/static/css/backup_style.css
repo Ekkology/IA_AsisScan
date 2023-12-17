@@ -1,0 +1,198 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f89f0f;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #e47e0d;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 198px;
+    color: #fff;
+    height: 57px;
+    margin-top: 20px !important;
+    transition: ease-in all 0.5s;
+    text-transform: uppercase;
+    border-radius: 30px;
+    display: inline-block;
+    background: #f89f0f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 57px;
+}
+
+.menu a:hover {
+    background: #e47e0d;
+}
+
+.search-form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 16px;
+}
+
+.search-button {
+    background: #f89f0f;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-button:hover {
+    background: #e47e0d;
+}
+
+.backup-options {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.backup-button {
+    background: #f89f0f;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.backup-button:hover {
+    background: #e47e0d;
+}
+
+.backup-list {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu a i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.backup-list li i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-buttons button,
+.top-buttons a {
+    background: #f6f5f3;
+    font-weight: 500;
+    font-size: 18px;
+    color: #141414;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.top-buttons button:hover,
+.top-buttons a:hover {
+    background: #e47e0d;
+}
+
+
+@media screen and (max-width: 768px) {
+    .search-input {
+        width: 80%;
+    }
+
+    .backup-options {
+        max-width: 100%;
+    }
+}
+

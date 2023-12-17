@@ -1,0 +1,22 @@
+body {
+    text-align: center; /* Centrar todo el contenido en el cuerpo */
+}
+h1 {
+    margin: 20px 0; /* Añadir espacio superior e inferior al título */
+}
+button {
+    font-size: 18px; /* Aumentar el tamaño de fuente de los botones */
+    margin: 10px; /* Añadir espacio entre los botones */
+}
+/* style.css */
+.divImg {
+    height: 100vh; /* Asegura que el div abarque toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-image {
+    max-width: 500px; /* Tamaño máximo de 500 píxeles de ancho */
+    max-height: 500px; /* Tamaño máximo de 500 píxeles de alto */
+}

@@ -1179,18 +1179,14 @@ ul.location_icon li a:hover {
  }
  
 
- .logo-container {
-     text-align: center; /* Alinea el contenido del contenedor al centro */
-     margin: 10px; /* Espaciado entre contenedores */
- }
+ 
 
  .logo-container img {
      max-width: 100px; /* Tamaño máximo de la imagen */
  }
 
 .banner_de_camaras{
-     margin-top: 20px;
-     margin-left: 20px;
+     text-align: center;
 }
 .conexion_camara{
      width:  700px;
@@ -1200,12 +1196,9 @@ ul.location_icon li a:hover {
 }
 
 .conexion_camara iframe{
-     width: 700px;
-     height: 400px;
+     
 }
 .logo-container2 img {
-     margin-top: 0px;
-     margin-left: 300px;
      max-width: 75px; /* Tamaño máximo de la imagen */
  }
  .conexion_camara2 iframe{
@@ -1232,5 +1225,197 @@ position: absolute; top: 0; left: 0;
      font-size: xx-large;
      color:#000;
 }
+
+.cameraFrame {
+     
+}
+
+.logo-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000;
+    /* Puedes personalizar el estilo de las flechas según tus preferencias */
+}
+
+.left-arrow {
+    left: 0;
+    margin-left: 30px; /* Ajusta el margen para centrar horizontalmente */
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.right-arrow {
+    right: 0;
+    margin-right: 30px; /* Ajusta el margen para centrar horizontalmente */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.flecha-izquierda,
+.flecha-derecha,
+.flecha-arriba,
+.flecha-abajo {
+   position: absolute;
+   width: 5%; /* Ajusta el ancho de las flechas según sea necesario */
+   height: auto; /* Ajusta la altura de las flechas según sea necesario */
+}
+
+.flecha-izquierda {
+     left: 0;
+     top: 50%;
+
+     transform: translateY(-50%);
+  }
+  
+  .flecha-derecha {
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%);
+  }
+  
+  .flecha-arriba {
+      
+     bottom: 90%;/* Ajusta la distancia desde la parte superior según sea necesario */
+     left: 50%;
+     transform: translateX(-50%);
+  }
+  
+  .flecha-abajo {
+
+     top: 90%; /* Ajusta la distancia desde la parte inferior según sea necesario */
+     left: 50%;
+     transform: translateX(-50%);
+  }
+  
+
+
+.logo-container {
+  /*  display: inline-block; *?
+}
+
+.dcamera_Image {
+     width: 700px;
+     height: 500px;
+     /* Otros estilos que desees aplicar */
+   }
+   
+   .overlay-container {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 600px; /* Ancho deseado */
+     height: 400px; /* Alto deseado */
+     background-color: rgba(0, 0, 0, 0.6); /* Fondo grisaceo opaco */
+     text-align: center;
+     z-index: 999; /* Coloca el cuadro por encima de otros elementos */
+ }
+ 
+ .close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+     font-size: 60px;
+     color :crimson;
+ }
+
+ .image-container {
+     margin: 10% auto; /* Ajusta el margen superior para centrar la imagen verticalmente */
+     width: 700px;
+     height: 500px;
+     background-color: white; /* Fondo blanco para el cuadro */
+     padding: 20px; /* Añade espacio interno al cuadro */
+ }
+
+ .recuadro
+{
+     display: flex;
+     justify-content: space-between;
+     background-color: #a7a5a5;
+     padding: 10px;
+     flex-direction: column;
+}
+.camara_def1 {
+     border-radius: 10px; /* Puedes ajustar el valor según la cantidad de redondeo que desees */
+     overflow: hidden; /* Esto asegura que la imagen se recorte para ajustarse al borde redondeado */
+     display: inline-block; 
+     width: 50%; /* Puedes ajustar el ancho según tus necesidades */
+     height: 50%;
+     position: relative;
+     /* Asegura que el contenedor tenga el tamaño de la imagen */
+ }
+ 
+ 
+ .camara_def1 img {
+     position: relative;
+     width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+     height: auto;
+
+ }
+
+
+ 
+   
+ .camara_cuadro {
+     background-color:#FFBE61;
+     padding: 10px;
+     margin: 10px; /* Agregar margen para separar los cuadros */
+     border-radius: 10px
+   }
+
+
+
+   .camara_cuadro img  {
+     width: 50px; /* Ancho de las imágenes */
+    height: 50px; /* Altura de las imágenes */
+    /*margin: 0 10px; /* Espacio horizontal entre imágenes */
+   }
+
+   .cuadro_rojo {
+     background-color: #FF0000; /* Fondo rojo */
+   }
+
+   /* Estilo para el fondo semitransparente */
+.overlayx{
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 1;
+   }
+   
+   /* Estilo para el formulario */
+   #formulario {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #fff;
+     padding: 20px;
+     z-index: 2;
+     text-align: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   }
+   
+   /* Estilo para el botón de cerrar el formulario */
+   #cerrarFormulario {
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     cursor: pointer;
+   }
+   
 /** end footer **/
 

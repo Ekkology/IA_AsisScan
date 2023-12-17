@@ -13,6 +13,14 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import  os
 
+
+
+
+
+
+
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_DIRS =['C:/Users/Ekko/Documents/IA_AsisScan/AsisScan/AsisScan/web/static']
+STATICFILES_DIRS =['/home/ekko/IA_AsisScan/AsisScan/AsisScan/web/static/']
 
 # Application definition
 
@@ -40,7 +48,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'register'
+    'register',
+    'esp_task',
+    'backups',
+    'Datos_Control_Asistencia'
 ]
 
 MIDDLEWARE = [
@@ -58,7 +69,7 @@ ROOT_URLCONF = 'AsisScan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Ekko/Documents/IA_AsisScan/AsisScan/AsisScan/web'],
+        'DIRS': ['/home/ekko/IA_AsisScan/AsisScan/AsisScan/web/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +91,7 @@ WSGI_APPLICATION = 'AsisScan.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # O el motor de base de datos que estés utilizando
-        'NAME': 'pruebaimagen',
+        'NAME': 'proyecto_asistencia',
         'USER': 'ia_team',
         'PASSWORD': 'prueba_ia2',
         'HOST': 'localhost',
@@ -125,9 +136,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+#Medias
+# settings.py
+
+#MEDIA_URL = '/home/ekko/IA_AsisScan/AsisScan/media'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#
 STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+MEDIA_URL = '/media/'  # La URL para servir archivos multimedia
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # La ubicación en el sistema de archivos donde se almacenarán los archivos multimedia
