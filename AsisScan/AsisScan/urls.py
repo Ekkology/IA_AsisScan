@@ -29,6 +29,7 @@ from esp_task.views import obtener_imagen2
 from esp_task.views import actualizar_movimiento
 from Datos_Control_Asistencia.views import control_asistencia
 from backups.views import Backups
+from AsisScan.view import UserProfile
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -47,6 +48,7 @@ urlpatterns = [
     path('obtener_imagen2/',obtener_imagen2),
     path('backups/',Backups),
     path('actualizar_movimiento/<str:direccion>/', actualizar_movimiento, name='actualizar_movimiento'),
+    path('UserProfile/',UserProfile),
     path('control_asistencia/',control_asistencia)
 ]
    

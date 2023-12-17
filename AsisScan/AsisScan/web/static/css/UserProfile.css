@@ -1,0 +1,84 @@
+.main-layout{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 1000px;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;  
+    width: 100%;
+    
+}
+
+.titulo nav{
+    display: flex;
+    width: 100%;
+}
+
+.titulo img{
+    height: 5em;
+}
+
+.titulo h1{
+    font-size: 3em;
+    padding: 1em;
+     /* background-color: lightgreen;  */
+    border-radius: 20px;
+    padding: .3em .6em;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+    
+    
+}
+
+.form-group label{
+    width: 50%; 
+  
+
+    
+}
+
+.btn-primary{
+     width: fit-content;
+    padding: .7em 1.3em;
+    font-size: 1.2em;
+    border-radius: 15px;    
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(193, 230, 243);
+    flex-direction: column;
+    width: fit-content;
+    padding: 2em;
+    border-radius: 20px; 
+
+}
+
+#profile-form{
+     /* background-color: lightcoral;  */
+     max-width: 800px;
+     
+   
+}
